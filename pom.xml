@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.markus.java</groupId>
+    <artifactId>OnJava8-Examples</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>objects</module>
+        <module>collections</module>
+        <module>stream</module>
+        <module>functional</module>
+        <module>innerclasses</module>
+        <module>interfaces</module>
+        <module>exceptions</module>
+        <module>validate</module>
+        <module>files</module>
+        <module>strings</module>
+        <module>reflection</module>
+        <module>generics</module>
+        <module>files</module>
+        <module>arrays</module>
+        <module>polymorphism</module>
+        <module>hiding</module>
+        <module>reuse</module>
+        <module>enums</module>
+        <module>serialization</module>
+        <module>concurrent</module>
+        <module>annotations</module>
+        <module>references</module>
+        <module>patterns</module>
+        <module>io</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>
