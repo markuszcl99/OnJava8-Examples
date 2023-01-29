@@ -17,11 +17,9 @@
         <module>interfaces</module>
         <module>exceptions</module>
         <module>validate</module>
-        <module>files</module>
         <module>strings</module>
         <module>reflection</module>
         <module>generics</module>
-        <module>files</module>
         <module>arrays</module>
         <module>polymorphism</module>
         <module>hiding</module>
@@ -33,6 +31,7 @@
         <module>references</module>
         <module>patterns</module>
         <module>io</module>
+        <module>files</module>
     </modules>
 
     <properties>
