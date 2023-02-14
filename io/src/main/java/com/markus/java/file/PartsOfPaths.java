@@ -27,3 +27,26 @@ public class PartsOfPaths {
         System.out.println("Starts with " + p.toAbsolutePath().getRoot() + " " + p.toAbsolutePath().startsWith(p.toAbsolutePath().getRoot()));
     }
 }
+/** 输出
+ * Mac OS X
+ * io
+ * src
+ * main
+ * java
+ * com
+ * markus
+ * java
+ * file
+ * PartsOfPaths.java
+ * ends with '.java': false
+ * io: true : false
+ * src: false : false
+ * main: false : false
+ * java: false : false
+ * com: false : false
+ * markus: false : false
+ * java: false : false
+ * file: false : false
+ * PartsOfPaths.java: false : true
+ * Starts with / true
+ */

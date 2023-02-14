@@ -43,8 +43,7 @@ public class PathInfo {
     public static void main(String[] args) {
         System.out.println(System.getProperty("os.name"));
         info(FileSystems.getDefault().getPath(""));
-//    /Users/zhangchenglong06/IdeaProjects/daily-record/src/main/resources/META-INF/file/file.txt
-        info(Paths.get("/Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/resources/", "file", "file.txt"));
+        info(Paths.get("io/src/main/resources", "file", "file.txt"));
         Path path = Paths.get(FileConstant.CURRENT_BASE_PATH, "/PathInfo.java");
         info(path);
         Path ap = path.toAbsolutePath();
@@ -59,6 +58,75 @@ public class PathInfo {
         System.out.println("URI:\n" + uri);
         Path pathUri = Paths.get(uri);
         System.out.println(Files.exists(pathUri));
+        // 不要被骗了
         File f = ap.toFile();
     }
 }
+/** 输出
+ * Mac OS X
+ * toString:
+ *
+ * Exists: true
+ * RegularFile: false
+ * Directory: true
+ * Absolute: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples
+ * FileName:
+ * Parent: null
+ * Root: null
+ * ****************************************************************************************
+ * toString:
+ * io/src/main/resources/file/file.txt
+ * Exists: false
+ * RegularFile: false
+ * Directory: false
+ * Absolute: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/resources/file/file.txt
+ * FileName: file.txt
+ * Parent: io/src/main/resources/file
+ * Root: null
+ * ****************************************************************************************
+ * toString:
+ * io/src/main/java/com/markus/java/file/PathInfo.java
+ * Exists: true
+ * RegularFile: true
+ * Directory: false
+ * Absolute: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/PathInfo.java
+ * FileName: PathInfo.java
+ * Parent: io/src/main/java/com/markus/java/file
+ * Root: null
+ * ****************************************************************************************
+ * toString:
+ * /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/PathInfo.java
+ * Exists: true
+ * RegularFile: true
+ * Directory: false
+ * Absolute: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/PathInfo.java
+ * FileName: PathInfo.java
+ * Parent: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file
+ * Root: /
+ * ****************************************************************************************
+ * toString:
+ * /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file
+ * Exists: true
+ * RegularFile: false
+ * Directory: true
+ * Absolute: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file
+ * FileName: file
+ * Parent: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java
+ * Root: /
+ * ****************************************************************************************
+ * toString:
+ * /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/PathInfo.java
+ * Exists: true
+ * RegularFile: true
+ * Directory: false
+ * Absolute: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/PathInfo.java
+ * FileName: PathInfo.java
+ * Parent: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file
+ * Root: /
+ * ****************************************************************************************
+ * URI:
+ * file:///Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/PathInfo.java
+ * true
+ *
+ * Process finished with exit code 0
+ */

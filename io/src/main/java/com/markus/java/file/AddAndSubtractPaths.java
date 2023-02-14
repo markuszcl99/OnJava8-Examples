@@ -59,3 +59,29 @@ public class AddAndSubtractPaths {
         show(11, Paths.get("nonexistent"));
     }
 }
+/** 输出
+ *  Mac OS X
+ * /Users
+ * (1)rzhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/AddAndSubtractPaths.java
+ * RealPath: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file/AddAndSubtractPaths.java
+ * (2)rzhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/strings/../file
+ * java.nio.file.NoSuchFileException: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/strings/../file
+ * (3)rzhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file
+ * RealPath: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples/io/src/main/java/com/markus/java/file
+ * (4)../..
+ * RealPath: /Users/zhangchenglong
+ * (5)../..
+ * RealPath: /Users/zhangchenglong
+ * (6)rzhangchenglong/IdeaProjects/OnJava8-Examples/../..
+ * RealPath: /Users/zhangchenglong
+ * (7)rzhangchenglong/IdeaProjects/OnJava8-Examples/./../..
+ * RealPath: /Users/zhangchenglong
+ * (8)rzhangchenglong
+ * RealPath: /Users/zhangchenglong
+ * (9)rzhangchenglong/IdeaProjects/OnJava8-Examples
+ * RealPath: /Users/zhangchenglong/IdeaProjects/OnJava8-Examples
+ * (10)rzhangchenglong/IdeaProjects/strings
+ * java.nio.file.NoSuchFileException: /Users/zhangchenglong/IdeaProjects/strings
+ * (11)nonexistent
+ * java.nio.file.NoSuchFileException: nonexistent
+ */
