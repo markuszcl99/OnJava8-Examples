@@ -40,3 +40,25 @@ public class Find {
         .forEach(System.out::println);
   }
 }
+/** 控制台
+ * io/src/main/java/com/markus/java/file/test/foo/bar/baz/bag/File3.txt
+ * io/src/main/java/com/markus/java/file/test/foo/bar/baz/bag/2767500121528410890.tmp
+ * io/src/main/java/com/markus/java/file/test/baz/bag/foo/bar/File1.txt
+ * io/src/main/java/com/markus/java/file/test/baz/bag/foo/bar/5789074899285883862.tmp
+ * io/src/main/java/com/markus/java/file/test/dir.tmp
+ * io/src/main/java/com/markus/java/file/test/bar/baz/bag/foo/File2.txt
+ * io/src/main/java/com/markus/java/file/test/bar/baz/bag/foo/5458649986440731775.tmp
+ * io/src/main/java/com/markus/java/file/test/bag/foo/bar/baz/File0.txt
+ * io/src/main/java/com/markus/java/file/test/bag/foo/bar/baz/5568292198534480479.tmp
+ * *******************
+ * 2767500121528410890.tmp
+ * 5789074899285883862.tmp
+ * dir.tmp
+ * 5458649986440731775.tmp
+ * 5568292198534480479.tmp
+ * *******************
+ * 2767500121528410890.tmp
+ * 5789074899285883862.tmp
+ * 5458649986440731775.tmp
+ * 5568292198534480479.tmp
+ */

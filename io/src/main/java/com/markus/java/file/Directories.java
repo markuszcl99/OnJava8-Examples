@@ -74,3 +74,41 @@ public class Directories {
     Files.walk(test).forEach(System.out::println);
   }
 }
+/** 控制台
+ * Nope, that doesn't work.java.nio.file.NoSuchFileException: io/src/main/java/com/markus/java/file/test/bag/foo/bar/baz
+ * io/src/main/java/com/markus/java/file/test/DIR_260744175083605522
+ * io/src/main/java/com/markus/java/file/test/foo
+ * io/src/main/java/com/markus/java/file/test/baz
+ * io/src/main/java/com/markus/java/file/test/bar
+ * io/src/main/java/com/markus/java/file/test/bag
+ * io/src/main/java/com/markus/java/file/test/Hello.txt
+ * ********************
+ * io/src/main/java/com/markus/java/file/test
+ * io/src/main/java/com/markus/java/file/test/DIR_260744175083605522
+ * io/src/main/java/com/markus/java/file/test/DIR_260744175083605522/pre7111318949801779914.non
+ * io/src/main/java/com/markus/java/file/test/foo
+ * io/src/main/java/com/markus/java/file/test/foo/bar
+ * io/src/main/java/com/markus/java/file/test/foo/bar/baz
+ * io/src/main/java/com/markus/java/file/test/foo/bar/baz/bag
+ * io/src/main/java/com/markus/java/file/test/foo/bar/baz/bag/File2.txt
+ * io/src/main/java/com/markus/java/file/test/foo/bar/baz/bag/2694156263661518806.tmp
+ * io/src/main/java/com/markus/java/file/test/baz
+ * io/src/main/java/com/markus/java/file/test/baz/bag
+ * io/src/main/java/com/markus/java/file/test/baz/bag/foo
+ * io/src/main/java/com/markus/java/file/test/baz/bag/foo/bar
+ * io/src/main/java/com/markus/java/file/test/baz/bag/foo/bar/File0.txt
+ * io/src/main/java/com/markus/java/file/test/baz/bag/foo/bar/6305328343447758907.tmp
+ * io/src/main/java/com/markus/java/file/test/bar
+ * io/src/main/java/com/markus/java/file/test/bar/baz
+ * io/src/main/java/com/markus/java/file/test/bar/baz/bag
+ * io/src/main/java/com/markus/java/file/test/bar/baz/bag/foo
+ * io/src/main/java/com/markus/java/file/test/bar/baz/bag/foo/File1.txt
+ * io/src/main/java/com/markus/java/file/test/bar/baz/bag/foo/5478658539929705751.tmp
+ * io/src/main/java/com/markus/java/file/test/bag
+ * io/src/main/java/com/markus/java/file/test/bag/foo
+ * io/src/main/java/com/markus/java/file/test/bag/foo/bar
+ * io/src/main/java/com/markus/java/file/test/bag/foo/bar/baz
+ * io/src/main/java/com/markus/java/file/test/bag/foo/bar/baz/File3.txt
+ * io/src/main/java/com/markus/java/file/test/bag/foo/bar/baz/5014150493260271159.tmp
+ * io/src/main/java/com/markus/java/file/test/Hello.txt
+ */

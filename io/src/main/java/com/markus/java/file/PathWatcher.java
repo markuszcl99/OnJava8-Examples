@@ -59,3 +59,13 @@ public class PathWatcher {
 
   }
 }
+/** 控制台
+ * deleting io/src/main/java/com/markus/java/file/test/foo/bar/baz/bag/File3.txt
+ * deleting io/src/main/java/com/markus/java/file/test/baz/bag/foo/bar/File1.txt
+ * deleting io/src/main/java/com/markus/java/file/test/bar/baz/bag/foo/File2.txt
+ * deleting io/src/main/java/com/markus/java/file/test/bag/foo/bar/baz/File0.txt
+ * deleting io/src/main/java/com/markus/java/file/test/Hello.txt
+ * evt.context(): Hello.txt
+ * evt.count(): 1
+ * evt.kind(): ENTRY_DELETE
+ */
