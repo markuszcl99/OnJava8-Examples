@@ -1,7 +1,7 @@
-package com.markus.java.file;
+package com.markus.java.io.file;
 
 
-import com.markus.java.file.constant.FileConstant;
+import com.markus.java.io.file.constant.FileConstant;
 
 import java.io.IOException;
 import java.nio.file.*;

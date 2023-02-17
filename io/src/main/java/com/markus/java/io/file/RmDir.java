@@ -1,4 +1,4 @@
-package com.markus.java.file;
+package com.markus.java.io.file;
 
 import java.io.IOException;
 import java.nio.file.FileVisitResult;

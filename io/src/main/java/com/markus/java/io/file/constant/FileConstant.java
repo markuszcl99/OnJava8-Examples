@@ -1,4 +1,4 @@
-package com.markus.java.file.constant;
+package com.markus.java.io.file.constant;
 
 /**
  * @author: markus
