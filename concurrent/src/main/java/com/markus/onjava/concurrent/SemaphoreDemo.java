@@ -22,12 +22,14 @@ public class SemaphoreDemo {
         @Override
         public void run() {
             try {
+                // 获取信号量的准入资格
                 semaphore.acquire();
                 Thread.sleep(1000);
                 System.out.println("Taxi [" + Thread.currentThread().getId() + "] pickup finished");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
+                // 释放信号
                 semaphore.release();
             }
         }
