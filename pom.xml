@@ -32,6 +32,7 @@
         <module>patterns</module>
         <module>io</module>
         <module>files</module>
+        <module>onjava</module>
     </modules>
 
     <properties>
