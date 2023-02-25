@@ -1,4 +1,4 @@
-package com.markus.onjava.concurrent;
+package com.markus.onjava.concurrent.deadlock;
 
 /**
  * @author: markus
