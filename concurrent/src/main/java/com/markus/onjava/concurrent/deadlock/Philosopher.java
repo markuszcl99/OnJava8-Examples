@@ -28,7 +28,6 @@ public class Philosopher implements Runnable {
     public void run() {
         while (true) {
             right.pickUp();
-//            waitTime(100); // 等待一会儿，让所有的哲学家都能拿起右手边的筷子，然后在尝试获取左手边的筷子时形成循环等待
             left.pickUp();
             System.out.println(this + " eating");
             right.putDown();
