@@ -34,12 +34,4 @@ public class Philosopher implements Runnable {
             left.putDown();
         }
     }
-
-    private void waitTime(long duration) {
-        try {
-            TimeUnit.MILLISECONDS.sleep(duration);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
 }

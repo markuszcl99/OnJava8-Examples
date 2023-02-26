@@ -2,6 +2,7 @@ package com.markus.onjava.concurrent.deadlock;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author: markus
@@ -27,7 +28,8 @@ public class StickHolder {
      */
     public void pickUp() {
         try {
-            holder.take(); // 不可用时会阻塞
+//            holder.take(); // 不可用时会阻塞
+            holder.poll(100, TimeUnit.MILLISECONDS);// 超时自己中断，不再尝试去获取锁
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

@@ -22,8 +22,8 @@ public class DiningPhilosophers {
         sticks = new StickHolder[n];
         Arrays.setAll(sticks, i -> new StickHolder());
         philosophers = new Philosopher[n];
-        Arrays.setAll(philosophers, i -> new Philosopher(i, sticks[i], sticks[(i + 1) % n])); // 通过模数n选择右手边的筷子，并将最后一个哲学家指向第一位哲学家旁边
-//        philosophers[1] = new Philosopher(0, sticks[0], sticks[1]);
+        Arrays.setAll(philosophers, i -> new Philosopher(i, sticks[i], sticks[(i + 1) % n]));
+//        philosophers[1] = new Philosopher(1, sticks[0], sticks[1]); // 通过将第2位哲学家颠倒拿放筷子的顺序来修正死锁
         Arrays.stream(philosophers)
                 .forEach(CompletableFuture::runAsync);
 
