@@ -11,4 +11,4 @@
         <img src="https://img.shields.io/github/issues/markuszcl99/OnJava8-Examples" alt="issues" />
     </p>
 </div>
-
+> 这个仓库是用来记录自己在学习《On Java》系列书籍时对书上示例经过自己的理解后所编写的代码。同时也对书上的知识做了消化记录到了个人博客上，你也可以参考。[个人博客-Java技术体系](https://markuszhang.com/zhi-shi-ti-xi.html)
