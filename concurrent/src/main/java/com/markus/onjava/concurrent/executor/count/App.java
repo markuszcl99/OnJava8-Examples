@@ -13,7 +13,7 @@ import java.util.concurrent.*;
  * It's my honor to share what I've learned with you!
  */
 public class App {
-    private static final int threadSize = 32;
+    private static final int threadSize = 8;
     private static ThreadPoolExecutor threadPool =
             new ThreadPoolExecutor(
                     threadSize,
@@ -25,14 +25,17 @@ public class App {
     public static void main(String[] args) throws ExecutionException, InterruptedException, TimeoutException {
         // 获取当前机器的CPU核数
         int cores = Runtime.getRuntime().availableProcessors();
-        int requestNum = 100;
+        int requestNum = 1000;
         System.out.println("CPU核数 " + cores);
         List<Future<?>> futureList = new ArrayList<>();
         Vector<Long> wholeTimeList = new Vector<>();
         Vector<Long> runTimeList = new Vector<>();
 
         for (int i = 0; i < requestNum; i++) {
-            Future<?> future = threadPool.submit(new IOTypeTest(runTimeList, wholeTimeList));
+            // IO密集型任务
+            //Future<?> future = threadPool.submit(new IOTypeTest(runTimeList, wholeTimeList));
+            // CPU密集型任务
+            Future<?> future = threadPool.submit(new CPUTypeTest(runTimeList, wholeTimeList));
             futureList.add(future);
         }
 
