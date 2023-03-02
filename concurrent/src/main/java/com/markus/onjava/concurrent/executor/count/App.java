@@ -13,7 +13,7 @@ import java.util.concurrent.*;
  * It's my honor to share what I've learned with you!
  */
 public class App {
-    private static final int threadSize = 8;
+    private static final int threadSize = 128;
     private static ThreadPoolExecutor threadPool =
             new ThreadPoolExecutor(
                     threadSize,
