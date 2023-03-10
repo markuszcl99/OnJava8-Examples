@@ -7,5 +7,5 @@ package com.markus.onjava.concurrent.task.framework;
  * @Blog: https://markuszhang.com
  * It's my honor to share what I've learned with you!
  */
-public class AsyncWorker {
+public abstract class AsyncWorker {
 }
