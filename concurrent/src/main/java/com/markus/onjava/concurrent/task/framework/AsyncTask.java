@@ -39,7 +39,7 @@ public abstract class AsyncTask implements Runnable {
             long elapsed = now - startTime;
             // 任务超时时间
             long timeout = getTimeout();
-            // 剩余需要阻塞等待的时间
+            // 剩余需要阻塞等待的时间 1
             long remaining = Long.max(1, timeout - elapsed);
             try {
                 future.get(remaining, TimeUnit.MILLISECONDS);
